@@ -1,3 +1,18 @@
+@charset "utf-8";
+@font-face {
+	font-family: Hamish;
+	src: url("https://res.cloudinary.com/idagom/raw/upload/v1631899508/Sprint1/Hamish_aobzpq.otf");
+}
+@font-face {
+	font-family: Myriad Pro;
+	src: url("https://res.cloudinary.com/idagom/raw/upload/v1631900140/Sprint1/MYRIADPRO-COND_hefmkz.woff");
+}
+@font-face {
+	font-family: Myriad Pro Light Condensed;
+	src: url("https://res.cloudinary.com/idagom/raw/upload/v1631907617/Sprint1/Myriad-Pro-Light-Condensed_hkpsw7.ttf");	
+}
+
+
 * {
     padding: 0px;
     margin: 0px;
@@ -10,7 +25,7 @@
 .navigation .logo {
     position: relative;
     left: 6.9%;
-    top: 14px;
+    top: 30px;
 }
 
 header {
@@ -27,7 +42,7 @@ header {
     width: 100%;
     height: 100%;
     display: flex;
-    background-color: #379388;
+    background-color: #286A55;
 }
 
 .navigation .logo {
@@ -37,7 +52,7 @@ header {
 
 .navigation .vacio {
     height: 100%;
-    flex: 501;
+    flex: 1000;
 }
 
 .navigation .nav-menu {
@@ -161,42 +176,49 @@ ul {
 .intro {
     height: 236px;
     display: grid;
-    grid-template-rows: 32.7% 22.76% 13% 15%;
-    grid-template-columns: 13.9% 43.6% 6.6% 18% 18%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: auto;
+    margin-bottom: 50px;
+    
 }
 
 @media screen and (min-width: 321px) {
     .intro {
         height: 369px;
         display: grid;
-        grid-template-rows: 32.7% 22.76% 13% 15%;
-        grid-template-columns: 13.9% 43.6% 6.6% 35.9%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-columns: 25% 25% 25% 25%;
+        text-align: center;
+        margin-bottom: 50px;
     }
 }
 
 .intro h1 {
     grid-column-start: 2;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 36px;
     color: #060a24;
     letter-spacing: 0;
     line-height: 42px;
+    margin-bottom: 30px;
+    margin-top: 50px;
 }
 
 @media screen and (min-width: 321px) {
     .intro h1 {
         grid-column-start: 2;
-        grid-column-end: 5;
+        grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 3;
         font-family: "IBM Plex Sans", sans-serif;
-        font-size: 64px;
+        font-size: 54px;
         color: #060a24;
         letter-spacing: 0;
-        margin: 0;
+        margin-bottom: 20px;
     }
 }
 
@@ -210,17 +232,35 @@ ul {
     display: inline-block;
 }
 
+.intro p {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    font-family: Myriad Pro Light Condensed, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #060a24;
+    
+    line-height: 30px;
+    text-align: justify;
+    margin-top: 100px;
+}
+
 @media screen and (min-width: 321px) {
     .intro p {
         grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 3;
         grid-row-end: 5;
-        font-family: "IBM Plex Mono", monospace;
-        font-size: 16px;
+        font-family: Myriad Pro Light Condensed, Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        font-weight: lighter;
         color: #060a24;
-        letter-spacing: 0;
-        line-height: 24px;
+        
+        line-height: 30px;
+        text-align: justify;
+        margin-top: 100px;
     }
     .intro p:nth-of-type(1) {
         display: inline-block;
@@ -250,11 +290,11 @@ ul {
 
 .boton-uno {
     padding: 2% 30% 2% 30%;
-    margin-left: 3%;
-    background: #00f3bb;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 16px;
-    color: #060a24;
+  
+    background: #002700;
+    font-family: Myriad Pro;
+    font-size: 30px;
+    color: #ffffff;
     letter-spacing: 0;
     text-align: center;
     line-height: 22px;
@@ -263,41 +303,139 @@ ul {
 
 @media screen and (min-width: 321px) {
     .boton-uno {
-        margin-left: 13.9%;
-        background: #00f3bb;
-        padding: 16px 59px;
-        font-family: "IBM Plex Mono", monospace;
-        font-size: 18px;
-        font-weight: 600;
-        color: #060a24;
+        padding: 20% 30%;
+        margin-left: 3%;
+        background: #002700;
+        font-family: Myriad Pro;
+        font-size: 30px;
+        color: #ffffff;
         letter-spacing: 0;
         text-align: center;
-        line-height: 24px;
+        line-height: 22px;
         text-decoration: none;
     }
 }
 
 .boton-uno:hover {
-    background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 18px;
-    font-weight: 500;
-    color: #ffffff;
+    padding: 20% 30%;
+    margin-left: 3%;
+    background: #FFFFFF;
+    font-family: Myriad Pro;
+    font-size: 30px;
+    color: #002700;
     letter-spacing: 0;
     text-align: center;
-    line-height: 24px;
+    line-height: 22px;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 321px) {
     .boton-uno:hover {
-        text-decoration: none;
-        background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
-        font-family: "IBM Plex Mono", monospace;
-        font-size: 18px;
-        font-weight: 600;
-        color: #ffffff;
+        padding: 20% 30%;
+        margin-left: 3%;
+        background: #FFFFFF;
+        font-family: Myriad Pro;
+        font-size: 30px;
+        color: #002700;
         letter-spacing: 0;
         text-align: center;
-        line-height: 24px;
+        line-height: 22px;
+        text-decoration: none;
     }
 }
+
+
+.background_form{
+	background : #286A55;	
+	width : 350px;
+	height : 530px;
+	margin: 150px auto;	 	
+}
+
+.title_sumerce{
+	font-family : "Hamish", Verdana, Geneva, Tahoma, sans-serif;
+	font-size : 70px;	
+	color : #FFFFFF;	
+	text-align: center;
+	padding: 20px;
+	margin-bottom: -20px;
+}
+
+.descrip_form{
+	font-family : Myriad Pro;
+	font-size : 23px;
+	line-height : 23px;
+	font-weight: 600;
+	color : #FFFFFF;
+	margin-top: 0;
+}
+
+
+#descrip_form{
+	width: 280px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 50px;
+}
+.rect_nombre, .rect_fnac, .rect_pass{
+	background : #FFFFFF;
+	/* background : rgba(255, 255, 255, 1); */
+	width : 225px;
+	height : 33px;
+	border-radius: 15px;
+	border:none;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	
+		
+}
+.rect_nombre:focus, .rect_fnac:focus, .rect_pass:focus{	
+    outline: none;
+}
+
+.form_nombre, .form_fnac, .form_pass{
+	font-family : Myriad Pro Light Condensed, Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: lighter;
+	font-size : 20px;
+	color : #FFFFFF;	
+}
+
+
+.linea{
+	border-style : Solid;
+	border-color : #FFFFFF;	
+	border-width : 1px;
+	width : 260px;
+	height : 0px;
+	margin-top:-25px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+
+.btn{
+	background : #002700;	
+	width : 140px;
+	height : 40px;	
+	font-family: Myriad Pro, Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 25px;
+	color: white;
+	margin-top: 40px;
+	border: none;
+	margin-left: 105px;	
+}
+
+.componentes_form {	
+	display: flex;
+ 	align-items: center;
+  	justify-content: center;
+	margin: 20px auto;
+	font-family: Myriad Pro, Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 25px;
+}
+
+.items_form{
+	margin-left: 65px;
+	margin-bottom: -20px;
+}
+
