@@ -344,6 +344,62 @@ ul {
     }
 }
 
+.boton-dos {
+    padding: 2% 30% 2% 30%;
+  
+    background: #002700;
+    font-family: Myriad Pro;
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 321px) {
+    .boton-dos {
+        padding: 20% 30%;
+        margin-left: 3%;
+        background: #002700;
+        font-family: Myriad Pro;
+        font-size: 30px;
+        color: #ffffff;
+        letter-spacing: 0;
+        text-align: left;
+        line-height: 22px;
+        text-decoration: none;
+    }
+}
+
+.boton-dos:hover {
+    padding: 20% 30%;
+    margin-left: 3%;
+    background: #FFFFFF;
+    font-family: Myriad Pro;
+    font-size: 30px;
+    color: #002700;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 321px) {
+    .boton-dos:hover {
+        padding: 20% 30%;
+        margin-left: 3%;
+        background: #FFFFFF;
+        font-family: Myriad Pro;
+        font-size: 30px;
+        color: #002700;
+        letter-spacing: 0;
+        text-align: left;
+        line-height: 22px;
+        text-decoration: none;
+    }
+}
+
 
 .background_form{
 	background : #286A55;	
@@ -437,5 +493,26 @@ ul {
 .items_form{
 	margin-left: 65px;
 	margin-bottom: -20px;
+}
+
+.container{
+	width: 40%;
+	text-align: center;
+}
+input{
+	display: block;
+	margin: 5px auto;
+	padding-left: 4px;
+	padding-right: 4px;
+	width: 80%;
+}
+#enter, #enternew{
+	margin: 10px;
+}
+label{
+	display: block;
+	text-align: center;
+	margin-left: 10%;
+	font-size: 12px;
 }
 
